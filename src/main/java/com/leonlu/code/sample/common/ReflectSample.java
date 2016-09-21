@@ -1,12 +1,21 @@
-package com.leonlu.code.sample.common.reflect;
+package com.leonlu.code.sample.common;
 
 import java.io.File;
 import java.lang.reflect.Method;
 import java.net.URL;
 import java.net.URLClassLoader;
 
-public class LoadJarAtRuntime {
-	private static void callReflectedMethod(String localJar, String className, String methodName,
+public class ReflectSample {
+	/**
+	 * load a jar at runtime, and call the specific method using java reflect technique
+	 * @param localJar
+	 * @param className
+	 * @param methodName
+	 * @param methodArgsClasses
+	 * @param methodArgs
+	 * @throws Exception
+	 */
+	public static void callReflectedMethodAtRuntime(String localJar, String className, String methodName,
 			Class[] methodArgsClasses, Object[] methodArgs) 
 			throws Exception{
 		URLClassLoader classLoader = (URLClassLoader)ClassLoader.getSystemClassLoader();
