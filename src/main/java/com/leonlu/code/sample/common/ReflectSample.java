@@ -15,7 +15,7 @@ public class ReflectSample {
 	 * @param methodArgs
 	 * @throws Exception
 	 */
-	public static void callReflectedMethodAtRuntime(String localJar, String className, String methodName,
+	public static void invokeMethodAtRuntime(String localJar, String className, String methodName,
 			Class[] methodArgsClasses, Object[] methodArgs) 
 			throws Exception{
 		URLClassLoader classLoader = (URLClassLoader)ClassLoader.getSystemClassLoader();

@@ -3,7 +3,7 @@ This project contains the common classes, utility classes and sample code for Ja
 
 ## Contents
 * common classes
-    * ReflectSample: call reflected methods
+    * ReflectSample: invoke methods using reflection
 * sample code
     * ExcelSample: read/write Excel
     * MailSender: send mails through STMP
