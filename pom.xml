@@ -10,6 +10,12 @@
 	<name>java-common-util-and-sample</name>
 	<url>http://maven.apache.org</url>
 
+<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.4.0.RELEASE</version>
+	</parent>
+	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -62,5 +68,13 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
+		
+		<!-- Apache Wink Client -->
+		<dependency>
+		    <groupId>org.apache.wink</groupId>
+		    <artifactId>wink-client</artifactId>
+		    <version>1.4</version>
+		</dependency>
+
 	</dependencies>
 </project>
