@@ -99,7 +99,7 @@ public class WinkSample {
 					}
 				};
 			
-			SSLContext sc = SSLContext.getInstance("TLS");//or SSL, it depends on the certificate
+			SSLContext sc = SSLContext.getInstance("TLSv1.2");//or SSL, it depends on the certificate
 			sc.init(null, trustManager, new java.security.SecureRandom());
 			HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory());
 			
